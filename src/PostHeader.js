@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const PostHeader = props => (
   <div className="post-header">
@@ -13,4 +14,11 @@ const PostHeader = props => (
     </div>
   </div>
 );
+
+PostHeader.propTypes = {
+  autor: PropTypes.string.isRequired,
+  data: PropTypes.string.isRequired,
+  avatar: PropTypes.string.isRequired,
+};
+
 export default PostHeader;

@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import PostHeader from './PostHeader';
 
 const Post = props => (
@@ -12,5 +14,14 @@ const Post = props => (
     </div>
   </div>
 );
+
+Post.propTypes = {
+  data: PropTypes.shape({
+    autor: PropTypes.string,
+    data: PropTypes.string,
+    avatar: PropTypes.string,
+    descricao: PropTypes.string,
+  }).isRequired,
+};
 
 export default Post;
