@@ -1,0 +1,17 @@
+/vendor
+/node_modules
+Homestead.yaml
+Homestead.json
+.env
+.env.hostinger
+
+# Phpstorm
+.idea/*
+
+## Sublime Text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+.idea/
